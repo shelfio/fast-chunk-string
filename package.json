@@ -36,7 +36,7 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.4.0",
     "fast-lorem-ipsum": "^1.1.0",
-    "jest": "^21.2.1",
+    "jest": "^22.0.4",
     "prettier": "^1.9.2"
   },
   "jest": {
