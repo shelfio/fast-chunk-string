@@ -6,11 +6,15 @@ it('should export a module', () => {
   expect(m).toBeInstanceOf(Function);
 });
 
-it('should split string into chunks of even number  of chars', () => {
+it('should split string into chunks of even number of chars', () => {
   expect(m(text, {size: 4})).toEqual(['hell', 'o my', ' dea', 'r wo', 'rld']);
 });
 
-it('should split string into chunks of odd number  of chars', () => {
+it('should split string even if chunk size is larger', () => {
+  expect(m(text, {size: 4000})).toEqual([text]);
+});
+
+it('should split string into chunks of odd number of chars', () => {
   expect(m(text, {size: 3})).toEqual(['hel', 'lo ', 'my ', 'dea', 'r w', 'orl', 'd']);
 });
 
