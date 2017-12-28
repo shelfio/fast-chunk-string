@@ -1,6 +1,6 @@
 {
   "name": "fast-chunk-string",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Chunk string into equal substrings with unicode support",
   "license": "MIT",
   "repository": "vladgolubev/fast-chunk-string",
