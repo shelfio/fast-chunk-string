@@ -30,6 +30,10 @@
     "utf8",
     "substring"
   ],
+  "dependencies": {
+    "runes": "^0.4.3",
+    "string-length": "^2.0.0"
+  },
   "devDependencies": {
     "benchmark": "^2.1.4",
     "eslint": "^4.14.0",
@@ -40,12 +44,6 @@
     "prettier": "^1.9.2"
   },
   "jest": {
-    "modulePathIgnorePatterns": [
-      "component-test"
-    ]
-  },
-  "dependencies": {
-    "runes": "^0.4.3",
-    "string-length": "^2.0.0"
+    "testEnvironment": "node"
   }
 }
