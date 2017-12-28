@@ -15,8 +15,17 @@ $ yarn add fast-chunk-string
 ```js
 const fastChunkString = require('fast-chunk-string');
 
-fastChunkString('unicorns', {size: 2});
+// the fastest way
+fastChunkString('unicorns', {size: 2, unicodeAware: false});
 // => ['un', 'ic', 'or', 'ns']
+
+// ignore unicode, still fast but inaccurate
+fastChunkString('😀😃😄😁', {size: 2, unicodeAware: false});
+// => ['😀', '😃', '😄', '😁']
+
+// respect unicode, slow but accurate
+fastChunkString('😀😃😄😁', {size: 2, unicodeAware: true});
+// => ['😀😃', '😄😁']
 ```
 
 ## Benchmarks

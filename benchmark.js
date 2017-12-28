@@ -9,29 +9,53 @@ const words500000 = fLI(500000, 'w');
 const words5000000 = fLI(5000000, 'w');
 
 suite
-  .add('5000 words (~33 kb) split by 2 kb', () => {
+  .add('~33 kb split by 2 kb', () => {
     fastChunkString(words5000, {size: 2 * 1024});
   })
-  .add('5000 words (~33 kb) split by 1 mb', () => {
+  .add('~33 kb split by 1 mb', () => {
     fastChunkString(words5000, {size: 1024 * 1024});
   })
-  .add('50000 words (~330 kb) split by 2 kb', () => {
+  .add('~330 kb split by 2 kb', () => {
     fastChunkString(words50000, {size: 2 * 1024});
   })
-  .add('50000 words (~330 kb) split by 1 mb', () => {
+  .add('~330 kb split by 1 mb', () => {
     fastChunkString(words50000, {size: 1024 * 1024});
   })
-  .add('500000 words (~3.3 mb) split by 2 kb', () => {
+  .add('~3.3 mb split by 2 kb', () => {
     fastChunkString(words500000, {size: 2 * 1024});
   })
-  .add('500000 words (~3.3 mb) split by 1 mb', () => {
+  .add('~3.3 mb split by 1 mb', () => {
     fastChunkString(words500000, {size: 1024 * 1024});
   })
-  .add('5000000 words (~33 mb) split by 2 kb', () => {
+  .add('~33 mb split by 2 kb', () => {
     fastChunkString(words5000000, {size: 2 * 1024});
   })
-  .add('5000000 words (~33 mb) split by 1 mb', () => {
+  .add('~33 mb split by 1 mb', () => {
     fastChunkString(words5000000, {size: 1024 * 1024});
+  })
+  .add('~33 kb split by 2 kb with unicodeAware', () => {
+    fastChunkString(words5000, {size: 2 * 1024, unicodeAware: true});
+  })
+  .add('~33 kb split by 1 mb with unicodeAware', () => {
+    fastChunkString(words5000, {size: 1024 * 1024, unicodeAware: true});
+  })
+  .add('~330 kb split by 2 kb with unicodeAware', () => {
+    fastChunkString(words50000, {size: 2 * 1024, unicodeAware: true});
+  })
+  .add('~330 kb split by 1 mb with unicodeAware', () => {
+    fastChunkString(words50000, {size: 1024 * 1024, unicodeAware: true});
+  })
+  .add('~3.3 mb split by 2 kb with unicodeAware', () => {
+    fastChunkString(words500000, {size: 2 * 1024, unicodeAware: true});
+  })
+  .add('~3.3 mb split by 1 mb with unicodeAware', () => {
+    fastChunkString(words500000, {size: 1024 * 1024, unicodeAware: true});
+  })
+  .add('~33 mb split by 2 kb with unicodeAware', () => {
+    fastChunkString(words5000000, {size: 2 * 1024, unicodeAware: true});
+  })
+  .add('~33 mb split by 1 mb with unicodeAware', () => {
+    fastChunkString(words5000000, {size: 1024 * 1024, unicodeAware: true});
   })
   .on('cycle', function(event) {
     console.log(String(event.target));

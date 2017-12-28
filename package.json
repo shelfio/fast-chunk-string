@@ -35,5 +35,9 @@
     "modulePathIgnorePatterns": [
       "component-test"
     ]
+  },
+  "dependencies": {
+    "runes": "^0.4.3",
+    "string-length": "^2.0.0"
   }
 }
