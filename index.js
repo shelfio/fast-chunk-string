@@ -1,7 +1,7 @@
 'use strict';
 
-module.exports = (str, size) => {
-  // TODO use unicode-awaree string length
+module.exports = (str, {size}) => {
+  // TODO use unicode-aware string length
   const numChunks = Math.ceil(str.length / size);
   const chunks = new Array(numChunks);
 

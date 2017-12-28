@@ -15,7 +15,7 @@ $ yarn add fast-chunk-string
 ```js
 const fastChunkString = require('fast-chunk-string');
 
-fastChunkString('unicorns', 2);
+fastChunkString('unicorns', {size: 2});
 // => ['un', 'ic', 'or', 'ns']
 ```
 
