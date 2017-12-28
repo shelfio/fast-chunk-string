@@ -1,7 +1,7 @@
 {
   "name": "fast-chunk-string",
   "version": "0.0.0",
-  "description": "Chunk string into equal substrings",
+  "description": "Chunk string into equal substrings with unicode support",
   "license": "MIT",
   "repository": "vladgolubev/fast-chunk-string",
   "author": {
@@ -21,7 +21,15 @@
   "files": [
     "index.js"
   ],
-  "keywords": [],
+  "keywords": [
+    "string",
+    "split",
+    "chunk",
+    "unicode",
+    "utf",
+    "utf8",
+    "substring"
+  ],
   "devDependencies": {
     "benchmark": "^2.1.4",
     "eslint": "^4.14.0",
