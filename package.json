@@ -13,6 +13,7 @@
     "node": ">=6"
   },
   "scripts": {
+    "benchmark": "node benchmark",
     "coverage": "jest --coverage",
     "lint": "eslint . --fix",
     "test": "jest"
@@ -22,9 +23,11 @@
   ],
   "keywords": [],
   "devDependencies": {
+    "benchmark": "^2.1.4",
     "eslint": "^4.14.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.4.0",
+    "fast-lorem-ipsum": "^1.1.0",
     "jest": "^21.2.1",
     "prettier": "^1.9.2"
   },
