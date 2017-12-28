@@ -45,18 +45,6 @@ suite
   .add('~330 kb split by 1 mb with unicodeAware', () => {
     fastChunkString(words50000, {size: 1024 * 1024, unicodeAware: true});
   })
-  .add('~3.3 mb split by 2 kb with unicodeAware', () => {
-    fastChunkString(words500000, {size: 2 * 1024, unicodeAware: true});
-  })
-  .add('~3.3 mb split by 1 mb with unicodeAware', () => {
-    fastChunkString(words500000, {size: 1024 * 1024, unicodeAware: true});
-  })
-  .add('~33 mb split by 2 kb with unicodeAware', () => {
-    fastChunkString(words5000000, {size: 2 * 1024, unicodeAware: true});
-  })
-  .add('~33 mb split by 1 mb with unicodeAware', () => {
-    fastChunkString(words5000000, {size: 1024 * 1024, unicodeAware: true});
-  })
   .on('cycle', function(event) {
     console.log(String(event.target));
   })

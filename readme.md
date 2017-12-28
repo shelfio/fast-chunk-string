@@ -33,14 +33,18 @@ fastChunkString('😀😃😄😁', {size: 2, unicodeAware: true});
 Run via `yarn benchmark`
 
 ```
-5000 words (~33 kb) split by 2 kb x 1,484,958 ops/sec ±0.73% (86 runs sampled)
-5000 words (~33 kb) split by 1 mb x 10,276,570 ops/sec ±1.03% (86 runs sampled)
-50000 words (~330 kb) split by 2 kb x 177,324 ops/sec ±1.22% (84 runs sampled)
-50000 words (~330 kb) split by 1 mb x 10,432,427 ops/sec ±0.62% (84 runs sampled)
-500000 words (~3.3 mb) split by 2 kb x 18,309 ops/sec ±0.68% (88 runs sampled)
-500000 words (~3.3 mb) split by 1 mb x 4,423,083 ops/sec ±0.71% (82 runs sampled)
-5000000 words (~33 mb) split by 2 kb x 1,827 ops/sec ±0.39% (88 runs sampled)
-5000000 words (~33 mb) split by 1 mb x 843,575 ops/sec ±0.50% (87 runs sampled)
+~33 kb split by 2 kb x 1,246,204 ops/sec ±3.08% (75 runs sampled)
+~33 kb split by 1 mb x 8,349,993 ops/sec ±0.63% (90 runs sampled)
+~330 kb split by 2 kb x 155,141 ops/sec ±1.49% (81 runs sampled)
+~330 kb split by 1 mb x 8,311,089 ops/sec ±1.92% (83 runs sampled)
+~3.3 mb split by 2 kb x 15,827 ops/sec ±1.56% (86 runs sampled)
+~3.3 mb split by 1 mb x 3,741,173 ops/sec ±1.14% (87 runs sampled)
+~33 mb split by 2 kb x 1,579 ops/sec ±0.88% (84 runs sampled)
+~33 mb split by 1 mb x 738,667 ops/sec ±0.38% (88 runs sampled)
+~33 kb split by 2 kb with unicodeAware x 6.24 ops/sec ±2.67% (20 runs sampled)
+~33 kb split by 1 mb with unicodeAware x 95.48 ops/sec ±1.01% (67 runs sampled)
+~330 kb split by 2 kb with unicodeAware x 0.06 ops/sec ±5.09% (5 runs sampled)
+~330 kb split by 1 mb with unicodeAware x 8.34 ops/sec ±3.33% (25 runs sampled)
 ```
 
 ## License
