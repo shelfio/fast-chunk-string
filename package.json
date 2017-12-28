@@ -1,0 +1,31 @@
+{
+  "name": "fast-chunk-string",
+  "version": "0.0.0",
+  "description": "Chunk string into equal substrings",
+  "license": "MIT",
+  "repository": "vladgolubev/fast-chunk-string",
+  "author": {
+    "name": "Vlad Holubiev",
+    "email": "golubev.vld@gmail.com",
+    "url": "vladholubiev.com"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "coverage": "jest --coverage",
+    "test": "jest"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [],
+  "devDependencies": {
+    "jest": "^21.2.1"
+  },
+  "jest": {
+    "modulePathIgnorePatterns": [
+      "component-test"
+    ]
+  }
+}
