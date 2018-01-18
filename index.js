@@ -4,6 +4,8 @@ const runes = require('runes');
 const stringLength = require('string-length');
 
 module.exports = (str, {size, unicodeAware = false}) => {
+  str = str || '';
+
   if (!unicodeAware) {
     return getChunks(str, size);
   }
