@@ -6,6 +6,14 @@ it('should export a module', () => {
   expect(m).toBeInstanceOf(Function);
 });
 
+it('should handle empty string', () => {
+  expect(m('', {size: 4})).toEqual([]);
+});
+
+it('should handle non strting', () => {
+  expect(m(null, {size: 4})).toEqual([]);
+});
+
 it('should split string into chunks of even number of chars', () => {
   expect(m(text, {size: 4})).toEqual(['hell', 'o my', ' dea', 'r wo', 'rld']);
 });
