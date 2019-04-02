@@ -32,7 +32,7 @@
   ],
   "dependencies": {
     "runes": "0.4.3",
-    "string-length": "3.0.0"
+    "string-length": "3.1.0"
   },
   "devDependencies": {
     "benchmark": "2.1.4",
