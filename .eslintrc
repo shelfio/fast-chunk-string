@@ -1,21 +1,6 @@
 {
   "root": true,
   "extends": [
-    "prettier"
-  ],
-  "plugins": [
-    "prettier"
-  ],
-  "rules": {
-    "prettier/prettier": "error"
-  },
-  "env": {
-    "node": true,
-    "jest": true,
-    "es6": true
-  },
-  "parserOptions": {
-    "ecmaVersion": 2018,
-    "sourceType": "module"
-  }
+    "@shelf/eslint-config/backend"
+  ]
 }
