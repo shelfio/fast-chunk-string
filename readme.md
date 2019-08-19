@@ -1,4 +1,4 @@
-# fast-chunk-string [![CircleCI](https://img.shields.io/circleci/project/github/vladgolubev/fast-chunk-string.svg)](https://circleci.com/gh/vladgolubev/fast-chunk-string)
+# fast-chunk-string [![CircleCI](https://img.shields.io/circleci/project/shelfio/vladgolubev/fast-chunk-string.svg)](https://circleci.com/gh/vladgolubev/fast-chunk-string)
 
 > Chunk string into equal substrings with unicode support
 
