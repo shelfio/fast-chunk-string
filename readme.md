@@ -49,4 +49,4 @@ Run via `yarn benchmark`
 
 ## License
 
-MIT © [Vlad Holubiev](https://vladholubiev.com)
+MIT © [Shelf](https://shelf.io)
