@@ -39,10 +39,28 @@
     "benchmark": "2.1.4",
     "eslint": "6.2.0",
     "fast-lorem-ipsum": "1.2.0",
+    "husky": "3.0.4",
     "jest": "24.9.0",
+    "lint-staged": "9.2.3",
     "prettier": "1.18.2"
   },
   "jest": {
     "testEnvironment": "node"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "post-commit": "git update-index --again"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{html,json,md,yml}": [
+      "prettier --write --ignore-path=./.eslintignore",
+      "git add"
+    ]
   }
 }
