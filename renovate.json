@@ -1,24 +1,3 @@
 {
-  "extends": [
-    "config:base"
-  ],
-  "packageRules": [
-    {
-      "groupName": "Frequently updated dev deps",
-      "automerge": true,
-      "major": {
-        "automerge": false
-      },
-      "packagePatterns": [
-        "^@babel/",
-        "^babel-",
-        "^eslint",
-        "^jest"
-      ],
-      "packageNames": [
-        "lint-staged",
-        "prettier"
-      ]
-    }
-  ]
+  "extends": ["github>shelfio/renovate-config"]
 }
