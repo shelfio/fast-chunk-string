@@ -37,7 +37,7 @@
   "devDependencies": {
     "@shelf/eslint-config": "0.3.13",
     "benchmark": "2.1.4",
-    "eslint": "6.2.0",
+    "eslint": "6.2.1",
     "fast-lorem-ipsum": "1.2.0",
     "husky": "3.0.4",
     "jest": "24.9.0",
