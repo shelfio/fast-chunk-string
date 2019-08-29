@@ -35,7 +35,7 @@
     "string-length": "3.1.0"
   },
   "devDependencies": {
-    "@shelf/eslint-config": "0.3.13",
+    "@shelf/eslint-config": "0.4.0",
     "benchmark": "2.1.4",
     "eslint": "6.2.2",
     "fast-lorem-ipsum": "1.2.0",
