@@ -41,7 +41,7 @@
     "fast-lorem-ipsum": "1.2.0",
     "husky": "3.0.9",
     "jest": "24.9.0",
-    "lint-staged": "9.4.2",
+    "lint-staged": "9.4.3",
     "prettier": "1.19.1"
   },
   "jest": {
