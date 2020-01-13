@@ -1,5 +1,5 @@
 {
-  "name": "fast-chunk-string",
+  "name": "@shelf/fast-chunk-string",
   "version": "1.0.1",
   "description": "Chunk string into equal substrings with unicode support",
   "keywords": [
@@ -76,5 +76,8 @@
   },
   "engines": {
     "node": ">=12"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

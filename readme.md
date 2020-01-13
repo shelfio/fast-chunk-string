@@ -7,13 +7,13 @@ Credits to [stackoverflow.com/a/29202760/2727317](https://stackoverflow.com/a/29
 ## Install
 
 ```
-$ yarn add fast-chunk-string
+$ yarn add @shelf/fast-chunk-string
 ```
 
 ## Usage
 
 ```js
-const fastChunkString = require('fast-chunk-string');
+const fastChunkString = require('@shelf/fast-chunk-string');
 
 // the fastest way
 fastChunkString('unicorns', {size: 2, unicodeAware: false});
