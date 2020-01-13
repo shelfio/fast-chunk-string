@@ -1,8 +1,8 @@
 module.exports = () => {
   return {
     testFramework: 'jest',
-    files: ['package.json', 'index.js', '!index.test.js'],
-    tests: ['index.test.js'],
+    files: ['package.json', 'index.ts', '!index.test.ts'],
+    tests: ['index.test.ts'],
     env: {
       type: 'node',
       runner: 'node'
