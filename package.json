@@ -21,6 +21,7 @@
   "files": [
     "lib"
   ],
+  "main": "lib",
   "scripts": {
     "benchmark": "node benchmark",
     "build": "rm -rf lib/ && yarn build:types && babel src --out-dir lib --ignore '**/*.test.ts' --extensions '.ts'",
@@ -58,11 +59,11 @@
   },
   "devDependencies": {
     "@babel/cli": "7.8.0",
-    "@babel/core": "^7.8.0",
-    "@babel/preset-env": "^7.8.2",
-    "@babel/preset-typescript": "^7.8.0",
+    "@babel/core": "7.8.0",
+    "@babel/preset-env": "7.8.2",
+    "@babel/preset-typescript": "7.8.0",
     "@shelf/eslint-config": "0.13.0",
-    "@types/jest": "^24.0.25",
+    "@types/jest": "24.0.25",
     "@types/node": "12",
     "benchmark": "2.1.4",
     "eslint": "6.8.0",
@@ -71,7 +72,7 @@
     "jest": "24.9.0",
     "lint-staged": "9.5.0",
     "prettier": "1.19.1",
-    "typescript": "^3.7.4"
+    "typescript": "3.7.4"
   },
   "engines": {
     "node": ">=12"
