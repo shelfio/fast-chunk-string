@@ -11,7 +11,7 @@
     "utf8",
     "substring"
   ],
-  "repository": "vladgolubev/fast-chunk-string",
+  "repository": "shelfio/fast-chunk-string",
   "license": "MIT",
   "author": {
     "name": "Vlad Holubiev",
@@ -23,7 +23,7 @@
   ],
   "main": "lib",
   "scripts": {
-    "benchmark": "node benchmark",
+    "benchmark": "babel benchmark.ts --out-dir '.' --extensions '.ts' && node benchmark",
     "build": "rm -rf lib/ && yarn build:types && babel src --out-dir lib --ignore '**/*.test.ts' --extensions '.ts'",
     "build:types": "tsc --emitDeclarationOnly --declaration --isolatedModules false --declarationDir lib",
     "coverage": "jest --coverage",
@@ -63,6 +63,7 @@
     "@babel/preset-env": "7.8.3",
     "@babel/preset-typescript": "7.8.3",
     "@shelf/eslint-config": "0.13.0",
+    "@types/benchmark": "1.0.31",
     "@types/jest": "24.0.25",
     "@types/node": "12",
     "benchmark": "2.1.4",
