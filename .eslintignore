@@ -1,2 +1,3 @@
-renovate.json
 lib/
+renovate.json
+tsconfig.json
