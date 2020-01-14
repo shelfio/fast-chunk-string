@@ -23,7 +23,7 @@
   ],
   "main": "lib",
   "scripts": {
-    "benchmark": "babel benchmark.ts --out-dir '.' --extensions '.ts' && node benchmark",
+    "benchmark": "babel benchmark.ts | node",
     "build": "rm -rf lib/ && yarn build:types && babel src --out-dir lib --ignore '**/*.test.ts' --extensions '.ts'",
     "build:types": "tsc --emitDeclarationOnly --declaration --isolatedModules false --declarationDir lib",
     "coverage": "jest --coverage",
