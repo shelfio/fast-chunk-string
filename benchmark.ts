@@ -1,7 +1,6 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-const Benchmark = require('benchmark');
-const fLI = require('fast-lorem-ipsum');
-const fastChunkString = require('./lib');
+import Benchmark from 'benchmark';
+import fLI from 'fast-lorem-ipsum';
+import fastChunkString from './lib';
 
 const suite = new Benchmark.Suite();
 const words5000 = fLI(5000, 'w');

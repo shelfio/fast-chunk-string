@@ -5,3 +5,4 @@ lib/
 temp
 yarn.lock
 *.log
+benchmark.js
