@@ -72,7 +72,7 @@
     "eslint": "6.8.0",
     "fast-lorem-ipsum": "1.2.0",
     "husky": "4.2.5",
-    "jest": "25.2.4",
+    "jest": "26.0.1",
     "lint-staged": "10.2.6",
     "prettier": "1.19.1",
     "typescript": "3.8.3"
