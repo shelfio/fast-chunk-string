@@ -69,12 +69,12 @@
     "@types/node": "12.12.28",
     "@types/runes": "0.4.1",
     "benchmark": "2.1.4",
-    "eslint": "6.8.0",
+    "eslint": "7.6.0",
     "fast-lorem-ipsum": "1.2.0",
     "husky": "4.2.5",
     "jest": "26.1.0",
     "lint-staged": "10.2.11",
-    "prettier": "1.19.1",
+    "prettier": "2.0.5",
     "typescript": "3.9.7"
   },
   "engines": {
