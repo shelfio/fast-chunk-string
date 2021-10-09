@@ -35,12 +35,6 @@
     "type-check": "tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "post-commit": "git update-index --again"
-    }
-  },
   "lint-staged": {
     "*.{html,json,md,yml}": [
       "prettier --write --ignore-path=./.eslintignore",
@@ -71,7 +65,7 @@
     "benchmark": "2.1.4",
     "eslint": "7.32.0",
     "fast-lorem-ipsum": "1.2.0",
-    "husky": "4.2.5",
+    "husky": "7.0.2",
     "jest": "27.2.5",
     "lint-staged": "11.2.1",
     "prettier": "2.4.1",
