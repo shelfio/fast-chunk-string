@@ -47,6 +47,15 @@ Run via `yarn benchmark`. Measured on Macbook Pro 13" with M1 processor.
 ~330 kb split by 1 mb with unicodeAware x 34.99 ops/sec ±0.91% (61 runs sampled)
 ```
 
+## Publish
+
+```sh
+$ git checkout master
+$ yarn version
+$ yarn publish
+$ git push origin master --tags
+```
+
 ## License
 
 MIT © [Shelf](https://shelf.io)
