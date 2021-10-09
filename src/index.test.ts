@@ -33,3 +33,7 @@ it('should split emojis to 1 even if asked for 2', () => {
 it('should split emojis correctly w/ useByteLength option', () => {
   expect(fastChunkString('😀😃😄😁', {size: 2, unicodeAware: true})).toEqual(['😀😃', '😄😁']);
 });
+
+it('should split emojis correctly w/ useByteLength option for odd chunk length', () => {
+  expect(fastChunkString('😀😃😄', {size: 2, unicodeAware: true})).toEqual(['😀😃', '😄']);
+});
