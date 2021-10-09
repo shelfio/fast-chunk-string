@@ -42,8 +42,9 @@ function getChunksUnicode(str: string, size: number): string[] {
   let i = 0;
   let o = 0;
 
+  const runeChars = runes(str);
   for (; i < numChunks; ++i, o += size) {
-    chunks[i] = runes.substr(str, o, size);
+    chunks[i] = runeChars.slice(o, o + size).join('');
   }
 
   return chunks;
