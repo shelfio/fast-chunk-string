@@ -5,10 +5,10 @@ module.exports = () => {
     tests: ['src/index.test.ts'],
     env: {
       type: 'node',
-      runner: 'node'
+      runner: 'node',
     },
     setup(wallaby) {
       wallaby.testFramework.configure(require('./package.json').jest);
-    }
+    },
   };
 };

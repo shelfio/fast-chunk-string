@@ -18,11 +18,11 @@
     "email": "vlad@shelf.io",
     "url": "https://shelf.io"
   },
-  "main": "lib",
-  "types": "lib/index.d.ts",
   "files": [
     "lib"
   ],
+  "main": "lib",
+  "types": "lib/index.d.ts",
   "scripts": {
     "benchmark": "babel benchmark.ts | node",
     "build": "rm -rf lib/ && yarn build:types && babel src --out-dir lib --ignore '**/*.test.ts' --extensions '.ts'",
@@ -59,23 +59,23 @@
     "string-length": "4.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.10.5",
-    "@babel/core": "7.11.1",
-    "@babel/preset-env": "7.11.0",
-    "@babel/preset-typescript": "7.10.4",
-    "@shelf/eslint-config": "0.19.0",
+    "@babel/cli": "7.15.7",
+    "@babel/core": "7.15.8",
+    "@babel/preset-env": "7.15.8",
+    "@babel/preset-typescript": "7.15.0",
+    "@shelf/eslint-config": "2.0.0",
     "@types/benchmark": "1.0.33",
-    "@types/jest": "26.0.9",
+    "@types/jest": "27.0.2",
     "@types/node": "12.12.28",
     "@types/runes": "0.4.1",
     "benchmark": "2.1.4",
-    "eslint": "6.8.0",
+    "eslint": "7.32.0",
     "fast-lorem-ipsum": "1.2.0",
     "husky": "4.2.5",
-    "jest": "26.2.2",
-    "lint-staged": "10.2.11",
-    "prettier": "1.19.1",
-    "typescript": "3.9.7"
+    "jest": "27.2.5",
+    "lint-staged": "11.2.1",
+    "prettier": "2.4.1",
+    "typescript": "4.4.3"
   },
   "engines": {
     "node": ">=12"

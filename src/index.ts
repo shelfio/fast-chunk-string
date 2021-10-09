@@ -5,7 +5,7 @@ export default function fastChunkString(
   str: string,
   {
     size,
-    unicodeAware = false
+    unicodeAware = false,
   }: {
     size: number;
     unicodeAware?: boolean;

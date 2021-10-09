@@ -45,7 +45,7 @@ suite
   .add('~330 kb split by 1 mb with unicodeAware', () => {
     fastChunkString(words50000, {size: 1024 * 1024, unicodeAware: true});
   })
-  .on('cycle', function(event) {
+  .on('cycle', function (event) {
     console.log(String(event.target));
   })
   .run({async: true});
