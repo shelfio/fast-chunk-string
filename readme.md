@@ -30,21 +30,21 @@ fastChunkString('😀😃😄😁', {size: 2, unicodeAware: true});
 
 ## Benchmarks
 
-Run via `yarn benchmark`
+Run via `yarn benchmark`. Measured on Macbook Pro 13" with M1 processor.
 
 ```
-~33 kb split by 2 kb x 1,246,204 ops/sec ±3.08% (75 runs sampled)
-~33 kb split by 1 mb x 8,349,993 ops/sec ±0.63% (90 runs sampled)
-~330 kb split by 2 kb x 155,141 ops/sec ±1.49% (81 runs sampled)
-~330 kb split by 1 mb x 8,311,089 ops/sec ±1.92% (83 runs sampled)
-~3.3 mb split by 2 kb x 15,827 ops/sec ±1.56% (86 runs sampled)
-~3.3 mb split by 1 mb x 3,741,173 ops/sec ±1.14% (87 runs sampled)
-~33 mb split by 2 kb x 1,579 ops/sec ±0.88% (84 runs sampled)
-~33 mb split by 1 mb x 738,667 ops/sec ±0.38% (88 runs sampled)
-~33 kb split by 2 kb with unicodeAware x 6.24 ops/sec ±2.67% (20 runs sampled)
-~33 kb split by 1 mb with unicodeAware x 95.48 ops/sec ±1.01% (67 runs sampled)
-~330 kb split by 2 kb with unicodeAware x 0.06 ops/sec ±5.09% (5 runs sampled)
-~330 kb split by 1 mb with unicodeAware x 8.34 ops/sec ±3.33% (25 runs sampled)
+~33 kb split by 2 kb x 8,902,281 ops/sec ±0.37% (97 runs sampled)
+~33 kb split by 1 mb x 100,872,434 ops/sec ±0.65% (92 runs sampled)
+~330 kb split by 2 kb x 1,009,220 ops/sec ±0.89% (95 runs sampled)
+~330 kb split by 1 mb x 97,087,201 ops/sec ±5.51% (90 runs sampled)
+~3.3 mb split by 2 kb x 102,498 ops/sec ±1.74% (97 runs sampled)
+~3.3 mb split by 1 mb x 33,719,853 ops/sec ±2.55% (94 runs sampled)
+~33 mb split by 2 kb x 9,953 ops/sec ±1.21% (95 runs sampled)
+~33 mb split by 1 mb x 4,976,079 ops/sec ±1.22% (94 runs sampled)
+~33 kb split by 2 kb with unicodeAware x 37.98 ops/sec ±0.16% (65 runs sampled)
+~33 kb split by 1 mb with unicodeAware x 355 ops/sec ±0.29% (89 runs sampled)
+~330 kb split by 2 kb with unicodeAware x 0.40 ops/sec ±1.19% (5 runs sampled)
+~330 kb split by 1 mb with unicodeAware x 34.99 ops/sec ±0.91% (61 runs sampled)
 ```
 
 ## License
