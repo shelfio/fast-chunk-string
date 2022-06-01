@@ -83,6 +83,12 @@ Finished 4 cases!
   Slowest: ~330 kb split by 1 mb with unicodeAware
 ```
 
+## See Also
+
+- [fast-normalize-spaces](https://github.com/shelfio/fast-normalize-spaces)
+- [fast-natural-order-by](https://github.com/shelfio/fast-natural-order-by)
+- [fast-uslug](https://github.com/shelfio/fast-uslug)
+
 ## Publish
 
 ```sh
