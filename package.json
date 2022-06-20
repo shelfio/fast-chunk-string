@@ -54,26 +54,26 @@
     "string-length": "4.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.16.0",
-    "@babel/core": "7.16.0",
-    "@shelf/babel-config": "0.1.5",
-    "@shelf/eslint-config": "2.5.2",
+    "@babel/cli": "7.17.10",
+    "@babel/core": "7.18.5",
+    "@shelf/babel-config": "1.0.2",
+    "@shelf/eslint-config": "2.18.0",
     "@shelf/tsconfig": "0.0.6",
     "@types/benchmark": "2.1.1",
-    "@types/jest": "27.0.3",
-    "@types/node": "14",
+    "@types/jest": "28.1.2",
+    "@types/node": "16",
     "@types/runes": "0.4.1",
     "benny": "3.7.1",
-    "eslint": "8.2.0",
+    "eslint": "8.18.0",
     "fast-lorem-ipsum": "1.2.0",
-    "husky": "7.0.4",
-    "jest": "27.3.1",
-    "lint-staged": "12.0.3",
-    "prettier": "2.4.1",
-    "typescript": "4.5.2"
+    "husky": "8.0.1",
+    "jest": "28.1.1",
+    "lint-staged": "13.0.2",
+    "prettier": "2.7.1",
+    "typescript": "4.7.4"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=16"
   },
   "publishConfig": {
     "access": "public"
