@@ -51,7 +51,7 @@
   },
   "dependencies": {
     "runes": "0.4.3",
-    "string-length": "4.0.2"
+    "string-length": "5.0.1"
   },
   "devDependencies": {
     "@babel/cli": "7.17.10",
