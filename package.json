@@ -60,7 +60,7 @@
     "@shelf/eslint-config": "2.22.3",
     "@shelf/tsconfig": "0.0.9",
     "@types/benchmark": "2.1.2",
-    "@types/jest": "29.2.0",
+    "@types/jest": "29.2.2",
     "@types/node": "16",
     "@types/runes": "0.4.1",
     "benny": "3.7.1",
