@@ -34,7 +34,7 @@ benny.suite(
     fastChunkString(words5000000, {size: 1024 * 1024});
   }),
   benny.cycle(),
-  benny.complete()
+  benny.complete(),
 );
 
 benny.suite(
@@ -52,5 +52,5 @@ benny.suite(
     fastChunkString(words50000, {size: 1024 * 1024, unicodeAware: true});
   }),
   benny.cycle(),
-  benny.complete()
+  benny.complete(),
 );
