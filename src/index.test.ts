@@ -11,7 +11,7 @@ it('should handle empty string', () => {
 });
 
 it('should handle non string', () => {
-  expect(fastChunkString(null as any, {size: 4})).toEqual([]);
+  expect(fastChunkString(null as never, {size: 4})).toEqual([]);
 });
 
 it('should split string into chunks of even number of chars', () => {
