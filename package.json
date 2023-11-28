@@ -61,7 +61,7 @@
     "@shelf/tsconfig": "0.0.11",
     "@types/benchmark": "2.1.5",
     "@types/jest": "29.5.8",
-    "@types/node": "16",
+    "@types/node": "18",
     "@types/runes": "0.4.3",
     "benny": "3.7.1",
     "eslint": "8.52.0",
@@ -73,7 +73,7 @@
     "typescript": "5.2.2"
   },
   "engines": {
-    "node": ">=16"
+    "node": ">=18"
   },
   "publishConfig": {
     "access": "public"
