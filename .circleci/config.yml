@@ -6,14 +6,14 @@ version: 2.1
 parameters:
   node_version:
     type: string
-    default: '16.15.1'
+    default: '18.18.2'
 
 commands:
   install_deps:
     steps:
       - node/install-packages:
           pkg-manager: yarn
-          cache-version: v1-all
+          cache-version: v2-all
           cache-only-lockfile: true
           app-dir: ~/repo
           override-ci-command: yarn install --pure-lockfile --no-progress
