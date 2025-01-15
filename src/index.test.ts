@@ -1,4 +1,4 @@
-import fastChunkString from './index';
+import fastChunkString from './index.js';
 
 const text = 'hello my dear world';
 

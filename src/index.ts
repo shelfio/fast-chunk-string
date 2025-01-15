@@ -1,7 +1,7 @@
 import runes from 'runes';
 import stringLength from 'string-length';
 
-export default function fastChunkString(
+function fastChunkString(
   str: string,
   {
     size,
@@ -49,4 +49,4 @@ function getChunksUnicode(str: string, size: number): string[] {
 
   return chunks;
 }
-module.exports = fastChunkString;
+export default fastChunkString;
