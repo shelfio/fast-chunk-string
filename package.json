@@ -32,7 +32,6 @@
     "coverage": "jest --coverage",
     "lint": "yarn lint:ci --fix",
     "lint:ci": "eslint . --quiet",
-    "prepack": "yarn build",
     "test": "jest src",
     "type-check": "tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch"
