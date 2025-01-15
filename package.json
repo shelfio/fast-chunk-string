@@ -18,15 +18,17 @@
     "email": "vlad@shelf.io",
     "url": "https://shelf.io"
   },
-  "main": "lib",
+  "sideEffects": false,
+  "type": "module",
+  "exports": "./lib/index.js",
+  "module": "./lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
     "lib"
   ],
   "scripts": {
-    "benchmark": "babel benchmark.ts | node",
-    "build": "rm -rf lib/ && yarn build:types && babel src --out-dir lib --ignore '**/*.test.ts' --extensions '.ts'",
-    "build:types": "tsc --emitDeclarationOnly --declaration --isolatedModules false --declarationDir lib",
+    "benchmark": "tsx benchmark.ts",
+    "build": "rm -rf lib/ && tsc",
     "coverage": "jest --coverage",
     "lint": "yarn lint:ci --fix",
     "lint:ci": "eslint . --quiet",
@@ -43,22 +45,20 @@
       "eslint --fix"
     ]
   },
-  "babel": {
-    "extends": "@shelf/babel-config/backend"
-  },
-  "jest": {
-    "testEnvironment": "node"
+  "resolutions": {
+    "strip-ansi": "6.0.1",
+    "wrap-ansi": "7.0.0",
+    "string-width": "4.2.3"
   },
   "dependencies": {
     "runes": "0.4.3",
-    "string-length": "4.0.2"
+    "string-length": "6.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.26.4",
-    "@babel/core": "7.26.0",
-    "@shelf/babel-config": "3.0.0",
     "@shelf/eslint-config": "4.4.0",
     "@shelf/tsconfig": "0.1.0",
+    "@swc/core": "1.10.7",
+    "@swc/jest": "0.2.37",
     "@types/benchmark": "2.1.5",
     "@types/jest": "29.5.14",
     "@types/node": "18",
@@ -70,6 +70,8 @@
     "jest": "29.7.0",
     "lint-staged": "15.3.0",
     "prettier": "3.4.2",
+    "ts-jest-resolver": "2.0.1",
+    "tsx": "4.19.2",
     "typescript": "5.7.3"
   },
   "engines": {
