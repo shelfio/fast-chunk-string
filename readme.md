@@ -13,7 +13,7 @@ $ yarn add @shelf/fast-chunk-string
 ## Usage
 
 ```js
-const fastChunkString = require('@shelf/fast-chunk-string');
+import fastChunkString from '@shelf/fast-chunk-string';
 
 // the fastest way
 fastChunkString('unicorns', {size: 2, unicodeAware: false});
