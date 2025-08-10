@@ -54,7 +54,7 @@
     "string-length": "6.0.0"
   },
   "devDependencies": {
-    "@shelf/eslint-config": "4.4.0",
+    "@shelf/eslint-config": "5.2.3",
     "@shelf/tsconfig": "0.1.0",
     "@swc/core": "1.10.18",
     "@swc/jest": "0.2.37",
