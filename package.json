@@ -50,8 +50,7 @@
     "string-width": "4.2.3"
   },
   "dependencies": {
-    "runes": "0.4.3",
-    "string-length": "6.0.0"
+    "runes": "0.4.3"
   },
   "devDependencies": {
     "@shelf/eslint-config": "5.2.3",

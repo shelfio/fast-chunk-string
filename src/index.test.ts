@@ -37,3 +37,7 @@ it('should split emojis correctly w/ useByteLength option', () => {
 it('should split emojis correctly w/ useByteLength option for odd chunk length', () => {
   expect(fastChunkString('😀😃😄', {size: 2, unicodeAware: true})).toEqual(['😀😃', '😄']);
 });
+
+it('should coerce fractional unicode chunk sizes like slice does', () => {
+  expect(fastChunkString('abcdef', {size: 2.5, unicodeAware: true})).toEqual(['ab', 'cde', 'f']);
+});

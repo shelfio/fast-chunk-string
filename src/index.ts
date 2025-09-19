@@ -1,8 +1,7 @@
 import runes from 'runes';
-import stringLength from 'string-length';
 
 function fastChunkString(
-  str: string,
+  original: string,
   {
     size,
     unicodeAware = false,
@@ -11,7 +10,12 @@ function fastChunkString(
     unicodeAware?: boolean;
   },
 ): string[] {
-  str = str || '';
+  const str = original || '';
+
+  if (str.length === 0) {
+    return [];
+  }
+
   if (!unicodeAware) {
     return getChunks(str, size);
   }
@@ -20,31 +24,52 @@ function fastChunkString(
 }
 
 function getChunks(str: string, size: number): string[] {
-  const strLength: number = str.length;
-  const numChunks: number = Math.ceil(strLength / size);
-  const chunks: string[] = new Array(numChunks);
+  const strLength = str.length;
 
-  let i = 0;
-  let o = 0;
+  if (strLength === 0) {
+    return [];
+  }
 
-  for (; i < numChunks; ++i, o += size) {
-    chunks[i] = str.substr(o, size);
+  if (size >= strLength) {
+    return [str];
+  }
+
+  const numChunks = Math.ceil(strLength / size);
+  const chunks = new Array<string>(numChunks);
+
+  for (let index = 0, offset = 0; index < numChunks; index += 1, offset += size) {
+    chunks[index] = str.substr(offset, size);
   }
 
   return chunks;
 }
 
 function getChunksUnicode(str: string, size: number): string[] {
-  const strLength: number = stringLength(str);
-  const numChunks: number = Math.ceil(strLength / size);
-  const chunks: string[] = new Array(numChunks);
-
-  let i = 0;
-  let o = 0;
-
   const runeChars = runes(str);
-  for (; i < numChunks; ++i, o += size) {
-    chunks[i] = runeChars.slice(o, o + size).join('');
+  const runeCount = runeChars.length;
+
+  if (runeCount === 0) {
+    return [];
+  }
+
+  if (size >= runeCount) {
+    return [str];
+  }
+
+  const numChunks = Math.ceil(runeCount / size);
+  const chunks = new Array<string>(numChunks);
+
+  for (let index = 0, offset = 0; index < numChunks; index += 1, offset += size) {
+    const start = Math.min(Math.floor(offset), runeCount);
+    const end = Math.min(Math.floor(offset + size), runeCount);
+
+    let chunk = '';
+
+    for (let i = start; i < end; i += 1) {
+      chunk += runeChars[i];
+    }
+
+    chunks[index] = chunk;
   }
 
   return chunks;
