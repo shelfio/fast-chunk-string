@@ -30,35 +30,35 @@ fastChunkString('😀😃😄😁', {size: 2, unicodeAware: true});
 
 ## Benchmarks
 
-Run via `yarn benchmark`. Measured on Macbook Pro 16" with M1 Max processor.
+Run via `yarn benchmark`. Measured on M2 Max.
 
 ```
 Running "Without Unicode" suite...
 Progress: 100%
 
   ~33 kb split by 2 kb:
-    14 384 027 ops/s, ±0.21%    | 86.51% slower
+    14 255 401 ops/s, ±0.33%   | 83.34% slower
 
   ~33 kb split by 1 mb:
-    106 655 332 ops/s, ±0.12%   | fastest
+    85 581 562 ops/s, ±1.89%   | fastest
 
   ~330 kb split by 2 kb:
-    1 482 220 ops/s, ±0.34%     | 98.61% slower
+    1 612 589 ops/s, ±0.83%    | 98.12% slower
 
   ~330 kb split by 1 mb:
-    106 442 883 ops/s, ±0.14%   | 0.2% slower
+    84 876 970 ops/s, ±1.98%   | 0.82% slower
 
   ~3.3 mb split by 2 kb:
-    153 356 ops/s, ±0.19%       | 99.86% slower
+    165 944 ops/s, ±0.62%      | 99.81% slower
 
   ~3.3 mb split by 1 mb:
-    48 824 019 ops/s, ±0.16%    | 54.22% slower
+    40 975 330 ops/s, ±1.19%   | 52.12% slower
 
   ~33 mb split by 2 kb:
-    14 312 ops/s, ±0.28%        | slowest, 99.99% slower
+    11 643 ops/s, ±0.50%       | slowest, 99.99% slower
 
   ~33 mb split by 1 mb:
-    7 059 008 ops/s, ±0.32%     | 93.38% slower
+    5 444 259 ops/s, ±0.78%    | 93.64% slower
 
 Finished 8 cases!
   Fastest: ~33 kb split by 1 mb
@@ -67,16 +67,16 @@ Running "Unicode Aware" suite...
 Progress: 100%
 
   ~33 kb split by 2 kb with unicodeAware:
-    450 ops/s, ±0.24%   | fastest
+    101.4 ops/s, ±0.95%   | fastest
 
   ~33 kb split by 1 mb with unicodeAware:
-    428 ops/s, ±0.36%   | 4.89% slower
+    99.7 ops/s, ±0.84%    | 1.68% slower
 
   ~330 kb split by 2 kb with unicodeAware:
-    45 ops/s, ±0.38%    | 90% slower
+    10.2 ops/s, ±0.51%    | 89.94% slower
 
   ~330 kb split by 1 mb with unicodeAware:
-    41 ops/s, ±0.42%    | slowest, 90.89% slower
+    10 ops/s, ±0.55%      | slowest, 90.14% slower
 
 Finished 4 cases!
   Fastest: ~33 kb split by 2 kb with unicodeAware
