@@ -36,14 +36,6 @@
     "type-check": "tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch"
   },
-  "lint-staged": {
-    "*.{html,json,md,yml}": [
-      "prettier --write --ignore-path=./.eslintignore"
-    ],
-    "*.{ts,js}": [
-      "eslint --fix"
-    ]
-  },
   "resolutions": {
     "strip-ansi": "6.0.1",
     "wrap-ansi": "7.0.0",
