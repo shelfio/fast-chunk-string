@@ -55,7 +55,7 @@
   "devDependencies": {
     "@shelf/eslint-config": "5.2.3",
     "@shelf/tsconfig": "0.1.0",
-    "@swc/core": "1.13.5",
+    "@swc/core": "1.15.7",
     "@swc/jest": "0.2.39",
     "@types/benchmark": "2.1.5",
     "@types/jest": "30.0.0",
