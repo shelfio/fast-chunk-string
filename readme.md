@@ -1,5 +1,7 @@
 # fast-chunk-string [![CircleCI](https://img.shields.io/circleci/project/shelfio/fast-chunk-string.svg)](https://circleci.com/gh/shelfio/fast-chunk-string)
 
+> **Archived:** This project is no longer maintained. Existing releases remain available as [`@shelf/fast-chunk-string`](https://www.npmjs.com/package/@shelf/fast-chunk-string) on npm.
+
 > Chunk string into equal substrings with unicode support
 
 Credits to [stackoverflow.com/a/29202760/2727317](https://stackoverflow.com/a/29202760/2727317)
